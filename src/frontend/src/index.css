@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0.96 0.01 240;
+    --foreground: 0.15 0.01 260;
+    --card: 1 0 0;
+    --card-foreground: 0.15 0.01 260;
+    --popover: 1 0 0;
+    --popover-foreground: 0.15 0.01 260;
+    --primary: 0.52 0.18 258;
+    --primary-foreground: 1 0 0;
+    --secondary: 0.65 0.15 160;
+    --secondary-foreground: 1 0 0;
+    --muted: 0.94 0.01 240;
+    --muted-foreground: 0.52 0.01 260;
+    --accent: 0.94 0.02 240;
+    --accent-foreground: 0.52 0.18 258;
+    --destructive: 0.6 0.2 25;
+    --destructive-foreground: 1 0 0;
+    --border: 0.9 0.01 240;
+    --input: 0.9 0.01 240;
+    --ring: 0.52 0.18 258;
+    --radius: 0.625rem;
+    --warning: 0.83 0.15 85;
+    --warning-foreground: 0.15 0.01 260;
+    --success: 0.65 0.15 160;
+    --success-foreground: 1 0 0;
+    --bmi-orange: 0.72 0.15 50;
+    --bmi-red: 0.6 0.2 25;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+  }
+}
